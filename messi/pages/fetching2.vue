@@ -9,6 +9,10 @@ const {data: product, pending, execute, error, status} = await useFetch(() =>
 console.log(status.value)
 setTimeout(() => {
     execute()
+    console.log(status.value)
+    setTimeout(() => {
+        console.log(status.value)
+    }, 400);
     }, 5000)
 </script>
 <template>
